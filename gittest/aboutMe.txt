@@ -1,0 +1,245 @@
+Last login: Tue Aug  1 11:45:09 on ttys000
+Guilhermes-MacBook-Pro:~ gpalmeira$ cd
+Guilhermes-MacBook-Pro:~ gpalmeira$ ls
+Applications		Dropbox			Pictures
+Desktop			Library			Public
+Documents		Movies			eclipse
+Downloads		Music			eclipse-workspace
+Guilhermes-MacBook-Pro:~ gpalmeira$ cd Desktop
+Guilhermes-MacBook-Pro:Desktop gpalmeira$ ls
+CodingDojo				index.html
+Dojo-Assignments			index2.html
+Screen Shot 2017-08-01 at 10.13.34.png	test
+command.txt
+Guilhermes-MacBook-Pro:Desktop gpalmeira$ cd Dojo-Assignments
+Guilhermes-MacBook-Pro:Dojo-Assignments gpalmeira$ ls
+IOS		Python		about.txt	command.txt	new_project
+MEAN		WebFundamentals	assignments.txt	netCore
+Guilhermes-MacBook-Pro:Dojo-Assignments gpalmeira$ cd new_project
+Guilhermes-MacBook-Pro:new_project gpalmeira$ ls
+aboutMe.txt		aboutMe.txt.save	aboutMe.txt.save.1
+Guilhermes-MacBook-Pro:new_project gpalmeira$ cat aboutMe.txt
+Name: Gui Palmeira Project Goal: Master Git Favorite TV Show: Game of Thrones
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+	aboutMe.txt.save
+	aboutMe.txt.save.1
+
+nothing added to commit but untracked files present (use "git add" to track)
+Guilhermes-MacBook-Pro:new_project gpalmeira$ rm aboutMe.text.save
+rm: aboutMe.text.save: No such file or directory
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.aboutMe.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+Guilhermes-MacBook-Pro:new_project gpalmeira$ clear
+
+Guilhermes-MacBook-Pro:new_project gpalmeira$ ls
+aboutMe.txt
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.aboutMe.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status aboutMe.txt
+On branch master
+nothing to commit, working tree clean
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git init
+Reinitialized existing Git repository in /Users/gpalmeira/Desktop/Dojo-Assignments/new_project/.git/
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.aboutMe.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+Guilhermes-MacBook-Pro:new_project gpalmeira$ ls
+aboutMe.txt
+Guilhermes-MacBook-Pro:new_project gpalmeira$ echo ""Name: Kari Ekenes
+Name: Kari Ekenes
+Guilhermes-MacBook-Pro:new_project gpalmeira$ Project Goal: Master Git!
+-bash: Project: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ Favorite TV Show: Game of Thrones
+-bash: Favorite: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ Favorite Quote:
+-bash: Favorite: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ “Computer science education cannot make anybody an expert programmer any more than 
+-bash: “Computer: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ studying brushes and pigment can make somebody an expert painter.”
+-bash: studying: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ - Eric S. Raymond
+-bash: -: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ echo "Name: Kari Ekenes"
+Name: Kari Ekenes
+Guilhermes-MacBook-Pro:new_project gpalmeira$ Project Goal: Master Git!
+-bash: Project: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ Favorite TV Show: Game of Thrones
+-bash: Favorite: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ Favorite Quote:
+-bash: Favorite: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ “Computer science education cannot make anybody an expert programmer any more than 
+-bash: “Computer: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ studying brushes and pigment can make somebody an expert painter.”
+-bash: studying: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ - Eric S. Raymond
+-bash: -: command not found
+Guilhermes-MacBook-Pro:new_project gpalmeira$ ls
+aboutMe.txt
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.aboutMe.txt.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git add aboutMe.txt
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.aboutMe.txt.swp
+
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git commit -m "added favorite quotes"
+[master 09a13b2] added favorite quotes
+ 1 file changed, 7 insertions(+)
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.aboutMe.txt.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git log
+commit 09a13b2b4b426c108f7d73d234d86d3e8f242af4
+Author: Gpalmeira <gpalmeira@gmail.com>
+Date:   Tue Aug 1 13:44:46 2017 -0300
+
+    added favorite quotes
+
+commit 074c6960d428ebd5c782a73a85bebf004423b465
+Author: Gpalmeira <gpalmeira@gmail.com>
+Date:   Tue Aug 1 10:59:24 2017 -0300
+
+    aboutMe.txt added
+Guilhermes-MacBook-Pro:new_project gpalmeira$ clear
+
+Guilhermes-MacBook-Pro:new_project gpalmeira$ pwd
+/Users/gpalmeira/Desktop/Dojo-Assignments/new_project
+Guilhermes-MacBook-Pro:new_project gpalmeira$ cd ..
+Guilhermes-MacBook-Pro:Dojo-Assignments gpalmeira$ ls
+IOS		Python		about.txt	command.txt	new_project
+MEAN		WebFundamentals	assignments.txt	netCore
+Guilhermes-MacBook-Pro:Dojo-Assignments gpalmeira$ cd new_project
+Guilhermes-MacBook-Pro:new_project gpalmeira$ ls
+aboutMe.txt
+Guilhermes-MacBook-Pro:new_project gpalmeira$ mkdir gittest
+Guilhermes-MacBook-Pro:new_project gpalmeira$ ls
+aboutMe.txt	gittest
+Guilhermes-MacBook-Pro:new_project gpalmeira$ git init
+Reinitialized existing Git repository in /Users/gpalmeira/Desktop/Dojo-Assignments/new_project/.git/
+Guilhermes-MacBook-Pro:new_project gpalmeira$ cd gittest
+Guilhermes-MacBook-Pro:gittest gpalmeira$ touch index.html
+Guilhermes-MacBook-Pro:gittest gpalmeira$ touch style.css
+Guilhermes-MacBook-Pro:gittest gpalmeira$ touch aboutMe.txt
+Guilhermes-MacBook-Pro:gittest gpalmeira$ vi aboutMe.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gui Palmeira
+38 years old
+Monomotor Airplane Private Pilot
+Studing at CodingDojo to recycle about IT
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+~                                                                                                                                
+-- INSERT --
